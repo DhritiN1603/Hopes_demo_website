@@ -1,0 +1,36 @@
+
+<html>
+<title>intro</title>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg1">
+  <h1 class="heading">Ho<span style="color:rgb(240, 52, 52)">PES</span></h1>
+  <h1 id="typewriter"></h1>
+  <script>
+    const text = "The hottest club on campus";
+    const typewriter = document.getElementById("typewriter");
+    let i = 0;
+
+    function typeWriter() {
+      if (i < text.length) {
+        typewriter.innerHTML += text.charAt(i);
+        i++;
+        setTimeout(typeWriter, 60); 
+      }
+    }
+    typeWriter(); // Call the function to start the typing effect
+  </script>
+  <center><button class="btn" id="myButton">Explore Now</button></center>
+  <script>
+    const button = document.getElementById("myButton");
+    const nextPageUrl = "home.html"; // Replace with your desired URL
+  
+    button.addEventListener("click", function() {
+      window.location.href = nextPageUrl;
+    });
+  </script>
+</body>
+</html>
