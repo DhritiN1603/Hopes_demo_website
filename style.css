@@ -150,7 +150,11 @@ body {
     grid-gap: 20px;
     padding: 50px;
 }
-
+.bottom-left {
+  position: absolute;
+  bottom: 8px;
+  left: 16px;
+}
 .image-container {
     position: relative;
 }
@@ -160,4 +164,22 @@ body {
     height: auto;
     border-radius: 8px;
     display: block;
+}
+
+video{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 150vw;
+  max-height: 90vh;
+  margin: auto;
+}
+
+video::-webkit-media-controls {
+  display: none;
+}
+.vid {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
